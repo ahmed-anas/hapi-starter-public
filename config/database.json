@@ -1,0 +1,25 @@
+{
+    "development": {
+        "username": "root",
+        "password": "",
+        "database": "hapi_starter_public",
+        "host": "localhost",
+        "dialect": "mysql",
+        "port": "3306"
+    },
+    "test": {
+        "username": "",
+        "password": "",
+        "database": "hapi_starter_public",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+
+    "production": {
+        "username": "root",
+        "password": "",
+        "database": "hapi_starter_public",
+        "host": "localhost",
+        "dialect": "mysql"
+    }
+}
