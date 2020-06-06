@@ -1,0 +1,9 @@
+pipeline { 
+    stages { 
+        stage('stage 1'){
+            steps { 
+                echo 'hey scm'
+            }
+        }
+    }
+}
