@@ -9,10 +9,13 @@ exports.calculateUserAge = function (dob) {
 
    var ageDifMs = Date.now() - date.getTime();
    var ageDate = new Date(ageDifMs); // miliseconds from epoch
-   var year = Math.abs(ageDate.getUTCFullYear() - 1970);
+   var year = (ageDate.getUTCFullYear() - 1970);
    if (year === 0) {
       var month = ageDate.getMonth();
       year = month/12
+   }
+   else if (year < 0){
+      throw new Error('invalid date of birth');
    }
   return year.toFixed(0)
 }

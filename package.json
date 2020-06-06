@@ -29,7 +29,7 @@
     "undo-seed:qa": "sequelize db:seed:undo:all --env qa",
     "seed:stage": "sequelize db:seed:all --env stage",
     "undo-seed:stage": "sequelize db:seed:undo:all --env stage",
-    "test": "mocha"
+    "test": "mocha --require babel-register src/**/*.test.js"
   },
   "repository": {
     "type": "git",
