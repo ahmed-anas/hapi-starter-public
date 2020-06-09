@@ -3,7 +3,7 @@
         "username": "root",
         "password": "",
         "database": "hapi_starter_public",
-        "host": "localhost",
+        "host": "mysql",
         "dialect": "mysql",
         "port": "3306"
     },

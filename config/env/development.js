@@ -3,7 +3,7 @@ const env = 'development';
 module.exports = {
     jwtSecret: 'youJwtSecretHere',
     env,
-    rootHost: 'localhost',
+    rootHost: '0.0.0.0',
     db: configHelper.getDatabaseConfig(env)
 
 }
