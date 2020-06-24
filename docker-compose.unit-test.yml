@@ -7,6 +7,7 @@ services:
     environment: 
       - S3_CREDS
       - SMTP_CREDS
+      - user
     volumes: 
       - .:/usr/src/app 
 

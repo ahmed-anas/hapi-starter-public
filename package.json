@@ -30,7 +30,7 @@
     "seed:stage": "sequelize db:seed:all --env stage",
     "undo-seed:stage": "sequelize db:seed:undo:all --env stage",
     "test": "npm run unit-test",
-    "unit-test": "mocha --watch --require babel-register src/**/*.test.js",
+    "unit-test": "mocha --require babel-register src/**/*.test.js",
     "unit-test:docker":"docker-compose -f docker-compose.unit-test.yml up"
   },
   "repository": {
