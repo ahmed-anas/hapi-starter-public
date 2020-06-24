@@ -1,9 +1,10 @@
 #!/bin/bash
 
 cd /usr/src
-cd app 
+cd app
 
-if [ $USER == "jenkins" ] 
+if [ "$USER" == "jenkins" ]
+then
     echo "Running unit tests in Jenkins without watch"
     npm run unit-test -- --watch
 else
