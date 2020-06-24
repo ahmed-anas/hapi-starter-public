@@ -6,4 +6,6 @@ COPY ./docker/docker-entrypoint.sh ./
 RUN npm install
 # COPY ./ . 
 
+RUN ["chmod", "+x", "./app/docker/docker-entrypoint.sh"]
+
 ENTRYPOINT ["./app/docker/docker-entrypoint.sh"]
