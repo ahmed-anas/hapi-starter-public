@@ -1,9 +1,8 @@
 #!/bin/bash
 
-cd /usr/src
+cd /usr/src/app
 npm run sequelize -- db:create
 npm run migrate:dev
-cd app 
 npm start
 
 touch foobar.txt

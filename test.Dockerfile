@@ -6,4 +6,4 @@ COPY ./docker/docker-entrypoint.sh ./
 RUN npm install
 # COPY ./ . 
 
-ENTRYPOINT ["./app/docker/docker-entrypoint.sh"]
+ENTRYPOINT ["./app/docker/docker-test.entrypoint.sh"]

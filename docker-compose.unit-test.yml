@@ -1,0 +1,13 @@
+version: '3'
+services:
+  unit-test:
+    build: 
+      context: .
+      dockerfile: ./test.Dockerfile
+    environment: 
+      - S3_CREDS
+      - SMTP_CREDS
+    volumes: 
+      - .:/usr/src/app 
+
+   
