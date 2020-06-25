@@ -7,7 +7,7 @@ services:
     environment: 
       - S3_CREDS
       - SMTP_CREDS
-      - user
+      - USER
       - NODE_ENV=development  
 
    
