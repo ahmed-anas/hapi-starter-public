@@ -3,7 +3,6 @@
 cd /usr/src/app
 npm run sequelize -- db:create
 npm run migrate:dev
-npm start
+npm start || exit 1
 
-touch foobar.txt
 
