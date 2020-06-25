@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 cd /usr/src
 cd app
@@ -6,8 +7,8 @@ cd app
 if [ "$USER" == "jenkins" ]
 then
     echo "Running unit tests in Jenkins without watch"
-    npm run unit-test -- --watch || exit 1
+    npm run unit-test -- --watch
 else
     echo "Running unit tests with watch"
-    npm run unit-test || exit 1
+    npm run unit-test
 fi
