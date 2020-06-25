@@ -2,6 +2,7 @@
 set -e
 
 cd /usr/src/app
+echo "user found $USER"
 if [ "$USER" == "jenkins" ]
 then
     echo "Running unit tests in Jenkins without watch"
