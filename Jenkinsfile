@@ -13,5 +13,11 @@ pipeline {
             }
             
         }
+    },
+    post {
+        always {
+            //TODO: make it prune only images created for this build. 
+            sh "docker system prune --all -f"
+        }
     }
 }
