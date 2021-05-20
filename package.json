@@ -64,7 +64,7 @@
     "hapi-auth-jwt": "^4.0.0",
     "hapi-auth-jwt2": "^8.8.1",
     "hapi-swagger": "^13.0.0",
-    "html-pdf": "^2.2.0",
+    "html-pdf": "^3.0.1",
     "inert": "^5.1.2",
     "joi-sequelize": "^0.2.8",
     "loadash": "^1.0.0",
